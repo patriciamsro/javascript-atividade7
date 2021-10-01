@@ -29,7 +29,7 @@
 </style>
 <script>
     function changeBoy(nameImg, msg) {
-        document.getElementById("imgBoy").src = `img/${nameImg}.png`;
+        document.getElementById("imgBoy").src = `./img/${nameImg}.png`;
         document.getElementById("txtBoy").innerHTML = msg;
         if(nameImg == "alegre") {
             nome = prompt("Qual é o seu nome?");
@@ -40,7 +40,7 @@
 </script>
 <body>
     <div class="boxBoy">
-        <img src="img/pensativo.png " id="imgBoy" alt="" height="169px" width="145" 
+        <img src="./img/pensativo.png " id="imgBoy" alt="" height="169px" width="145" 
         onmouseenter="changeBoy('assustado', 'O que você quer?')" 
         onmousedown="changeBoy('nervoso', 'Não me aperte!!!')"
         onmouseup="changeBoy('alegre', '')"
